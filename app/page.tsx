@@ -1,160 +1,164 @@
 import Image from "next/image";
-import Logo from "@/components/Logo";
 import Link from "next/link";
+
+const highlightCards = [
+  {
+    src: "/photos/group.jpg",
+    alt: "Bridging Seas group members gathered together",
+    className: "md:col-span-2",
+  },
+  {
+    src: "/photos/conference.jpg",
+    alt: "Students participating in a Bridging Seas event",
+    className: "",
+  },
+  {
+    src: "/photos/sharonpenpals.JPG",
+    alt: "Students smiling during a penpal exchange",
+    className: "",
+  },
+];
+
+const stats = [
+  { value: "400+", label: "Penpals" },
+  { value: "12", label: "Countries" },
+  // { value: "17", label: "Cities" },
+  { value: "20+", label: "Chapters" },
+];
+
+const pillars = [
+  {
+    title: "Culture",
+    icon: "/pillars/culture.png",
+    body: "Bridging Seas recognizes that culture is the core of who we are and connects us with those who share the same culture. Tapping into the culture of our youth, we encourage students from around the world to embrace the diversity of their cultural roots through pen-palling.",
+  },
+  {
+    title: "Appreciation",
+    icon: "/pillars/appreciation.png",
+    body: "As youth ourselves, the Bridging Seas team offers a safe platform for students to not only appreciate their culture through exchange with students who share the same roots, but also a place to discover how their culture is diverse, adaptable, and eternally changing.",
+  },
+  {
+    title: "Community",
+    icon: "/pillars/community.png",
+    body: "Bridging Sea’s foremost mission is to foster a community for our students to feel comfortable in sharing their culture. Through monthly meetings and community corners, we aim to make our students feel supported and heard in our community as they grow in their cultural exploration.",
+  },
+];
 
 export default function Home() {
   return (
-    <div>
-      <div>
-        {/* section one */}
+    <div className="bg-background text-foreground">
+      <section className="bg-primary">
+        <div className="relative flex min-h-[360px] w-full items-end overflow-hidden px-6 py-16 sm:min-h-[520px] sm:px-10 lg:px-16">
           <Image
-            src="/waves_banner.jpg"
-            alt="Waves banner"
-            width={1920}
-            height={1080}
-            className="w-full h-auto z-0"
+            src="/graphics/waves_banner.jpg"
+            alt="Bridging Seas banner"
+            fill
+            priority
+            className="object-cover"
           />
-          <div className="absolute inset-0 flex items-center justify-center z-10">
-            <h2 className="text-5xl font-bold text-white">
-              Bridging Seas
-            </h2>
-            
-          </div>
-          
-      </div>
-      {/* section 2 */}
-      <div className="w-full px-25 py-15 text-[#fdf4e3]">
-        <div className="text-5xl font-bold">
-          Connect with your roots
-        </div>
-        <div className="py-5 text-lg">
-          Bridging Seas is a youth-led global organization that aims to unify the Asian diaspora. Our goal is to connect high schoolers from around the world by creating a platform for them to learn about each other's cultures and unique experiences. We envision a more compassionate, understanding world where students embrace their roots and different lifestyles through direct communication with international friends.
-        </div>
-        <div className="flex flex-col md:flex-row gap-8">
-          <div className="relative flex-[2] aspect-[16/9] overflow-hidden rounded-xl bg-gray-400">
-            <Image
-              src="/group.jpg"
-              alt="Group photo"
-              fill
-              className="object-cover"
-            />
-          </div>
-          <div className="relative flex-[1] aspect-[16/9] overflow-hidden rounded-xl bg-gray-400">
-            <Image
-              src="/sharonpenpals.jpg"
-              alt="Malacca"
-              fill
-              className="object-cover"
-            />
-          </div>
-          <div className="relative flex-[1] aspect-[16/9] overflow-hidden rounded-xl bg-gray-400">
-            <Image
-              src="/conference.jpg"
-              alt="Conference"
-              fill
-              className="object-cover"
-            />
-          </div>
-        </div>
-        <div className="flex justify-center mt-4">
-          <Link href="/join">
-            <button className="px-40 py-3 my-6 bg-[#ffcb77] text-[#fdf4e3] rounded-full">
-              Our Story
-            </button>
-          </Link>
-        </div>
-      </div>
-      {/* section 3 */}
-      <div className="w-full px-25 py-20 pt-15 bg-[#c4b0ab] text-[#fdf4e3]">
-        <div className="text-lg font-bold w-1/2">
-          Over the years, Bridging Seas has achieved multiple milestones and have reach communities around the world
-        </div>
-        <div className="flex flex-col md:flex-row gap-30 mt-5">
-          
-          <div>
-            <div className="font-bold text-9xl">
-              350+
-            </div >
-            <div className="font-bold text-4xl">
-              Penpals
-            </div>
-          </div>
-          <div>
-            <div className="font-bold text-9xl">
-              16+
-            </div >
-            <div className="font-bold text-4xl">
-              Cities
-            </div>
-          </div>
-          <div>
-            <div className="font-bold text-9xl">
-              20+
-            </div >
-            <div className="font-bold text-4xl">
-              Chapters
+          <div className="absolute inset-0 bg-primary/20" />
+          <div className="relative mx-auto w-full max-w-[1440px]">
+            <div className="max-w-3xl">
+              <p className="text-xs font-semibold uppercase tracking-[0.35em] text-foreground/70">
+                Bridging Seas
+              </p>
+              <h1 className="mt-4 text-4xl font-bold tracking-tight text-foreground sm:text-6xl">
+                Unifying the Asian Diaspora.
+              </h1>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* section 4 */}
-      <div className="w-full px-25 py-15 bg-[#ffcb77]"> 
-        <div className="font-bold text-5xl text-[#fdf4e3]">
-          Our Pillars
-        </div>
-        <p className="font-bold text-[#fdf4e3] text-lg mt-3">
-          Learn more about our values
-        </p>
-        <div className="flex flex-col rounded-xl rounded-tl-none md:flex-row gap-30 mt-5">
-          <div className="bg-[#fdf4e3] aspect-[4/3] text-[#af7d61] p-10">
-            <Image
-            src="/culture.png"
-            alt="Culture Icon"
-            width={70}
-            height={70}
-            className="h-auto pb-10"
-            />
-            <div className="font-bold text-3xl my-3">
-              Culture
-            </div>
-            <p>
-              Bridging Seas recognizes that culture is the core of who we are and connects us with those who share the same culture. Tapping into the culture of our youth, we encourage students from around the world to embrace the diversity of their cultural roots through pen-palling.
-            </p>
+      <section className="bg-background">
+        <div className="mx-auto max-w-[1440px] px-6 py-10 sm:px-10 sm:py-14 lg:px-16">
+          <h2 className="text-3xl font-bold tracking-tight sm:text-5xl">
+            Connect with your roots
+          </h2>
+          <p className="mt-4 max-w-4xl text-sm leading-6 text-foreground/75 sm:text-base">
+            Bridging Seas is a youth-led global organization that aims to unify the Asian diaspora. Our goal is to connect high schoolers from around the world by creating a platform for them to learn about each other&apos;s cultures and unique experiences. We envision a more compassionate, understanding world where students embrace their roots and different lifestyles through direct communication with international friends.
+          </p>
+
+          <div className="mt-8 grid gap-4 md:grid-cols-4 md:grid-rows-1">
+            {highlightCards.map((card) => (
+              <div
+                key={card.src}
+                className={`relative min-h-[280px] overflow-hidden rounded-[10px] bg-foreground/20 sm:min-h-[340px] ${card.className}`}
+              >
+                <Image
+                  src={card.src}
+                  alt={card.alt}
+                  fill
+                  className="object-cover grayscale-[18%]"
+                />
+              </div>
+            ))}
           </div>
-          <div className="bg-[#fdf4e3] rounded-xl rounded-tl-none aspect-[4/3] text-[#af7d61] p-10">
-            <Image
-            src="/appreciation.png"
-            alt="Appreciation Icon"
-            width={70}
-            height={70}
-            className="h-auto pb-10"
-            />
-            <div className="font-bold text-3xl my-3">
-              Appreciation
-            </div>
-            <p>
-              As youth ourselves, the Bridging Seas team offers a safe platform for students to not only appreciate their culture through exchange with students who share the same roots, but also a place to discover how their culture is diverse, adaptable, and eternally changing.
-            </p>
-          </div>
-          <div className="bg-[#fdf4e3] rounded-xl rounded-tl-none aspect-[4/3] text-[#af7d61] p-10">
-            <Image
-            src="/community.png"
-            alt="Community Icon"
-            width={70}
-            height={70}
-            className="h-auto pb-10"
-            />
-            <div className="font-bold text-3xl my-3">
-              Community
-            </div>
-            <p>
-              Bridging Sea’s foremost mission is to foster a community for our students to feel comfortable in sharing their culture. Through monthly meetings and community corners, we aim to make our students feel supported and heard in our community as they grow in their cultural exploration.
-            </p>
+
+          <div className="mt-6 flex justify-center">
+            <Link
+              href="/about"
+              
+              className="rounded-2xl bg-primary px-12 py-3 text-center text-base ttransition-all duration-200 hover:-translate-y-1 hover:shadow-[0_10px_20px_rgba(44,62,64,0.18)] sm:min-w-[280px] sm:text-lg"
+            >
+              Our Story
+            </Link>
           </div>
         </div>
-      </div>
+      </section>
+
+      <section className="bg-background">
+        <div className="mx-auto max-w-[1440px] px-6 py-10 sm:px-10 sm:py-14 lg:px-16">
+          <p className="max-w-2xl text-sm font-semibold leading-6 sm:text-lg">
+            Over the years Bridging Seas has achieved multiple milestones and
+            earned recognition from students, educators, and community partners.
+          </p>
+          <div className="mt-10 grid gap-10 sm:grid-cols-3">
+            {stats.map((stat) => (
+              <div key={stat.label}>
+                <div className="text-7xl font-bold tracking-tight sm:text-7xl">
+                  {stat.value}
+                </div>
+                <div className="mt-2 text-4xl sm:text-4xl">{stat.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-background">
+        <div className="mx-auto max-w-[1440px] px-6 py-10 sm:px-10 sm:py-14 lg:px-16">
+          <h2 className="text-3xl font-bold tracking-tight sm:text-5xl">
+            Our Pillars
+          </h2>
+          <p className="mt-3 text-sm text-muted sm:text-lg">
+            The values that shape every program, connection, and bridge we
+            build.
+          </p>
+          <div className="mt-8 grid gap-6 lg:grid-cols-3">
+            {/* instead of background, do box shadows */}
+            {pillars.map((pillar) => (
+              <article
+                key={pillar.title}
+                className={`rounded-bl-[20px] rounded-br-[20px] rounded-tr-[20px] p-8 shadow-[0_1px_0_rgba(44,62,64,0.08)]
+                  bg-accent/70`}
+              >
+                <Image
+                  src={pillar.icon}
+                  alt={`${pillar.title} icon`}
+                  width={78}
+                  height={78}
+                  className="h-[78px] w-[78px]"
+                />
+                <h3 className="mt-6 text-3xl font-bold">{pillar.title}</h3>
+                <p className="mt-4 text-sm leading-6 text-foreground/75">
+                  {pillar.body}
+                </p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
-        
   );
 }
