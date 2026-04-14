@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Home",
+  description:
+    "Bridging Seas is a youth-led global organization uniting the Asian diaspora through pen pal programs, cultural exchange, and student-led community.",
+};
 
 const highlightCards = [
   {

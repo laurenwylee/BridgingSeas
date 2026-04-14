@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Get Involved",
+  description:
+    "Explore ways to get involved with Bridging Seas, from joining a pen pal program to starting a local chapter, partnering with us, or applying to the team.",
+};
 
 type Opportunity = {
   title: string;

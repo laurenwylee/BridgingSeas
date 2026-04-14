@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "About",
+  description:
+    "Learn the story behind Bridging Seas, our mission, and how we build cultural understanding and community for students across the Asian diaspora.",
+};
 
 function SectionTitle({
   children,

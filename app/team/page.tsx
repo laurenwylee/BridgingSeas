@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { NewsletterForm } from "@/components/FooterNewsletterForm";
@@ -12,6 +13,12 @@ type Person = {
   linkedin?: string;
   github?: string;
   website?: string;
+};
+
+export const metadata: Metadata = {
+  title: "Team",
+  description:
+    "Meet the student leaders and regional directors who make Bridging Seas possible around the world.",
 };
 
 const execDirectors = [
