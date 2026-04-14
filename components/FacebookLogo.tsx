@@ -2,6 +2,7 @@ import Image from "next/image"
 
 export default function FacebookLogo() {
   return (
+    
     <Image
       src="/facebook_logo.png"
       alt="Facebook Icon"
