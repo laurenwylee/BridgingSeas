@@ -111,7 +111,7 @@ export default function About() {
                   Middle School in Malacca, Malaysia. Our monthly meetings with
                   pen pals became impromptu video calls, slang exchanges, and
                   even physics tutoring sessions. What began as virtual
-                  friendship slowly became long-awaited visits to one another&apos;s
+                  friendships slowly became long-awaited visits to one another&apos;s
                   hometowns, introductions to family, and the joy of sharing
                   food and stories in person.
                 </p>
