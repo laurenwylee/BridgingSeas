@@ -73,6 +73,10 @@ const branches = [
         role: "Technology Director",
         image: "/people/ethan.jpeg",
       },
+      { name: "Catherine Cai", 
+        role: "Chinese Outreach Director", 
+        image: "/people/catherine.jpeg" 
+      },
     ],
   },
   {
