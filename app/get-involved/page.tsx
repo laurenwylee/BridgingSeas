@@ -28,7 +28,7 @@ const opportunities = [
     title: "Start a Local Chapter",
     description:
       "Bring Bridging Seas to your own community by applying to launch a chapter and bring cultural exchange to your local community.",
-    href: "https://forms.google.com",
+    href: "https://docs.google.com/forms/d/e/1FAIpQLScYGC_HbJl_rvI5TwyztBftRs1AcR9noqD0riVIt_xsPUxqlg/viewform?usp=dialog",
     cta: "Chapter Application",
     disabled: false,
   },
