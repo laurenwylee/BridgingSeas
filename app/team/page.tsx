@@ -91,6 +91,11 @@ const branches = [
         role: "Singaporean Outreach Director",
         image: "/people/chloe.jpeg",
       },
+      {
+        name: "Kulraj Kaur",
+        role: "Chapter Manager",
+        image: "/people/kulraj.png",
+      },
     ],
   },
   {
