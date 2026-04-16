@@ -82,7 +82,7 @@ const branches = [
         role: "Chinese Outreach Director", 
         image: "/people/amy.jpg",
       },
-      { name: "Dylan Galati"
+      { name: "Dylan Galati",
         role: "Social Media Director",
         image: "/people/dylan.jpeg",
       },
