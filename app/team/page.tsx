@@ -49,7 +49,7 @@ const branches = [
       {
         name: "Chloe Kan",
         role: "American Regional Lead",
-        image: "/people/chloe.jpg",
+        image: "/people/chloe.jpeg",
       },
       { name: "Isha Mahesh", 
         role: "Indian Outreach Director", 
@@ -81,6 +81,10 @@ const branches = [
       { name: "Amy Li", 
         role: "Chinese Outreach Director", 
         image: "/people/amy.jpg" 
+      },
+      { name: "Dylan Galati"
+        role: "Social Media Director"
+        image: "/people/dylan.jpeg"
       },
     ],
   },
