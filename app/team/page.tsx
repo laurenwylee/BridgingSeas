@@ -61,7 +61,7 @@ const branches = [
       },
       { name: "Eric Lam", 
         role: "Chinese Outreach Director & Western Hemisphere Lead", 
-        image: "/people/eric.jpg" 
+        image: "/people/eric.jpg",
       },
       {
         name: "Lixin Zhang",
@@ -76,15 +76,15 @@ const branches = [
       },
       { name: "Catherine Cai", 
         role: "Chinese Outreach Director", 
-        image: "/people/catherine.jpeg" 
+        image: "/people/catherine.jpeg",
       },
       { name: "Amy Li", 
         role: "Chinese Outreach Director", 
-        image: "/people/amy.jpg" 
+        image: "/people/amy.jpg",
       },
       { name: "Dylan Galati"
-        role: "Social Media Director"
-        image: "/people/dylan.jpeg"
+        role: "Social Media Director",
+        image: "/people/dylan.jpeg",
       },
     ],
   },
