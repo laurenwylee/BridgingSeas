@@ -167,7 +167,7 @@ const branches = [
     members: [
       {
         name: "Ngan Nguyen",
-        role: "Australian Regional Lead & Technology Directory",
+        role: "Australian Regional Lead & Technology Director",
         image: "/people/ngan.jpg",
       },
       { name: "Nicola Warouw ", 
