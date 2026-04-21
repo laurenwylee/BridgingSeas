@@ -96,6 +96,11 @@ const branches = [
         role: "Chapter Manager",
         image: "/people/kulraj.png",
       },
+      {
+        name: "Julia Chawarski",
+        role: "Program Manager",
+        image: "/people/anonymous_woman.png"
+      },
     ],
   },
   {
