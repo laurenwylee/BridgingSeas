@@ -99,7 +99,7 @@ const branches = [
       {
         name: "Julia Chawarski",
         role: "Program Manager",
-        image: "/people/anonymous_woman.png"
+        image: "/people/julia.jpeg"
       },
     ],
   },
