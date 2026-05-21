@@ -117,8 +117,8 @@ export default function Home() {
       <section className="bg-background">
         <div className="mx-auto max-w-[1440px] px-6 py-10 sm:px-10 sm:py-14 lg:px-16">
           <p className="max-w-2xl text-sm font-semibold leading-6 sm:text-lg">
-            Over the years Bridging Seas has achieved multiple milestones and
-            earned recognition from students, educators, and community partners.
+            Over the years, Bridging Seas has achieved multiple milestones and
+            earned recognition from students, educators and community partners.
           </p>
           <div className="mt-10 grid gap-10 sm:grid-cols-3">
             {stats.map((stat) => (
