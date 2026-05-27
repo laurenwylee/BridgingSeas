@@ -8,10 +8,8 @@ This repository contains the official Bridging Seas website.
 
 - Chapter and regional pages
 - Information about programs and initiatives
-- Event listings and registration
 - Team and leadership profiles
 - Responsive and modern UI
-- Fast search and navigation
 
 ## Tech Stack
 
@@ -19,7 +17,6 @@ This repository contains the official Bridging Seas website.
 - React
 - TypeScript
 - Tailwind CSS
-- MongoDB (if applicable)
 - Vercel deployment
  --------------------------
 
